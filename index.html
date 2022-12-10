@@ -72,8 +72,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <class class="col-md-4">Hi Fellas!, I will be happy to discuss with you. Good job and give you what you want, I wish you happiness, and we can work together soon, thankyou very much.</class>
-          <div class="col-md-4">Addicted to ART, CULTURE, HISTORY, PHILOSOPHY, RELIGION, & TECHNOLOGY.</div>
+          <class class="col-md-4"
+            >Hi Fellas!, My name is Dzikripam, I am a Bachelor, majoring in Informatics Engineering at a university in West Java, Indonesia. I have a passion for all things Web & Programming, from full stack developer to UI/UX.</class
+          >
+          <div class="col-md-4">Addicted to Art, Culture, History, Philosophy, Religion, & Technology.</div>
         </div>
       </div>
     </section>
@@ -158,7 +160,7 @@
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="name@example.com" name="email" />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
@@ -219,6 +221,8 @@
             btnKirim.classList.toggle("d-none");
             // tampilkan alert
             myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
